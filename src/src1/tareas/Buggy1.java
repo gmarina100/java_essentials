@@ -5,6 +5,7 @@ import libs.Input;
 public class Buggy1 {
 
 	public static void main(String[] args) {
+		//System.out.print("Please enter a number:");
 	    int i = get_negative_int();
 	    Input.print(i + " is a negative integer\n");
 	}
@@ -14,10 +15,10 @@ public class Buggy1 {
 	    int n;
 	    do
 	    {
-	        Input.print("n is ");
+	       Input.print("Enter a number ");
 	        n = Input.get_int();
 	    }
-	    while (n > 0);
+	    while (n >= 0);
 	    return n;
 	}
 }
